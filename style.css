@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --Text: gainsboro;
+    --Background: grey;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.container{
+    min-height: 450px;
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Details{
+    background-color: red;
+    box-shadow: 0 0 20px rgb(242, 80, 80);
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Image{
+    height: 170px;
+    width: 170px;
+    margin-top: 20px;
+    border: 5px solid var(--Text);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Image img{
+    height: 100%;
+    width: 100%;
+}
+
+.Details p{
+    font-family: 'Lemon', serif;
+    margin-top: 15px;
+    color: var(--Text);
+    font-size: 1.1rem;
+}
+
+.Details h1{
+    color: var(--Text);
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.list{
+    display: flex;
+    background-color: yellow;
+    box-shadow: 0 0 20px rgb(249, 246, 61);
+    height: 25%;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    margin: 25px 0;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+li img{
+    height: 100%;
+    width: 100%;
+}
+
+li:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+#GetUser{
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family: 'Lemon', serif;
+}
+
+.active{
+    display: block;
+}
+
+.NonActive{
+    display: none;
+}
+
+@media (width<400px) {
+    body{
+        gap: 50px;
+        height: 100%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: inherit;
+        margin: 40px 20px;
+    }
+    .Image{
+        height: 100px;
+        width: 100px;
+    }
+    .Details{
+        height: 40%;
+    }
+    .Details p{
+        font-size: 0.8rem;
+    }
+    .Details h1{
+        font-size: 1rem;
+    }
+    .list{
+        height: 15%;
+    }
+
+}
